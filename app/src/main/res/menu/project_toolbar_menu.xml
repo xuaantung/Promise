@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_edit_project"
+        android:title="@string/edit_project_action_title"
+        android:icon="@drawable/ic_edit"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_view_members"
+        android:title="View Members"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_delete_project"
+        android:title="Delete Project"
+        android:icon="@drawable/ic_add_person"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_invite_user"
+        android:title="@string/invite_to_project_action_title"
+        android:icon="@drawable/ic_add_person"
+        app:showAsAction="never" />
+
+</menu>

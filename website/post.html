@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+
+    <title>Promise</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Promise</a>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav me-auto mb-2 mb-md-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="post.html">Postmortem</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="velocity.html">Velocity</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="album.html">Album</a>
+              </li>
+            </ul>
+          </div>
+
+      </nav>
+
+    </header>
+
+    <main>
+        <div class="container py-4">
+          <header class="pb-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+              <h1 class="fs-4">Throwback on our project development</h1>
+            </a>
+          </header>
+      
+          <div class="p-5 mb-4 bg-light rounded-3">
+            <div class="container-fluid">
+              <h1 class="display-5 fw-bold">What was the overall architecture of your system?</h1>
+              <p class="col-md-15 fs-4">Our overall structure followed what we learned in class. We used a 3-tier architecture with a presentation layer, business layer, persistence layer and data specific objects. We tried our best to make sure that each layer only handled tasks appropriate for it. For example, user experience (UI) in the presentation layer, calculations and data manipulation in the business layer and data storage in the persistence layer. The presentation layer handles what the user sees when they use our app and also their input. Whenever some user input is received that presentation layer calls an appropriate function in the business layer. The business layer would then do any calculations and call the database for any data it needed to manipulate and return the result of this to the presentation layer. The presentation layer would then display this to the user.</p>
+            </div>
+          </div>
+      
+        <div class="row align-items-md-stretch">
+
+            <div class="col-md-6">
+                <div class="h-100 p-5 text-white bg-success rounded-3">
+                <h2>What went right in the development process?</h2>
+                <p>What went right was that we were very lucky that we had members that were really skilled with different parts of the project so everything came together very fast. We didn’t have weeks of 5 people trying to fix one thing, it was pretty much everyone working independently on one aspect at the same time which led to faster outputs. 
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+                <div class="h-100 p-5 text-white bg-danger rounded-3">
+                <h2>What went wrong in the development process?</h2>
+                <p>Our independence led to there being some confusion in terms of code we weren’t responsible for creating. This was evident when doing things like adding filler data to the database and not being sure what certain fields meant.
+                </p>
+              </div>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="container py-4">
+        
+            <div class="p-5 mb-4 text-white bg-secondary rounded-3">
+              <div class="container-fluid">
+                <h1 class="display-5 fw-bold">What would you do differently, if you had the chance to start over?</h1>
+                <p class="col-md-15 fs-4">The tasks and projects were only finalized towards the end of the semester, so it would have been better if we focused more on the core functionalities like tasks and projects in earlier iterations rather than having one member per feature. 
+                    We also had a good code layout, but didn’t have a lot of comments for each file. At the end of iteration 3, the project was too big to add detailed comments for future review. If we could start over, we would like to have a more consistent coding style with more comments.
+                    </p>
+              </div>
+            </div>
+  
+            <div class="p-5 mb-4 bg-light rounded-3">
+              <div class="container-fluid">
+                <h1 class="display-5 fw-bold">What did you learn about team or large project development? What will you start doing, keep doing, or stop doing next time?
+                </h1>
+                <p class="col-md-15 fs-4"> We’ve definitely learned the importance of communication and making sure everybody understands exactly what it is they’re doing even if that means having it in writing. In the first iteration (iteration 0) we kind of all had a verbal agreement of what everyone was doing which resulted in things like multiple people working on the same task and other tasks not being done at all. We committed to writing our responsibilities down in a shared space and as a result, did not have this issue in iteration 1. 
+                    After iteration 1 when we all assigned ourselves a certain aspect of the project to work on, we pretty much all kind of stuck with it the entire term so there was no longer much need for written agreements on things. The problem with that was that once finished with our assigned feature, it was kind of confusing knowing where to jump in because you’re not sure if the people working on the bigger parts of the project have a system going that you don’t want to mess with or if they even need help at all. Since we no longer felt the need to outline what we were doing because we were all doing our own thing, it was harder to know what to do once you were done with your task.
+                    This further illustrated the importance of everyone having an idea of what needs to be done. If we had continued reassigning tasks as a group and having it all down somewhere where everyone could see and volunteer for it, this might have let to less confusion. 
+                
+                    </p>
+              </div>
+            </div>
+        
+          <div class="row align-items-md-stretch">
+  
+              <div class="col-md-6">
+                <div class="h-100 p-5 text-white bg-info rounded-3">
+                  <h2>What took the most time?</h2>
+                  <p>We spent a lot of our time early on teaching ourselves how the UI worked in Android Studio and then most of the technical debt we had to deal with later on was a consequence of our tenuous understanding of the UI and fear of manipulating it too much lest we break our code. In the second iteration, a lot of time was spent figuring out how to pass the data from the presentation layer into the business layer. Once that was established, things moved at a much quicker pace. 
+                    
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="h-100 p-5 text-dark bg-warning rounded-3">
+                  <h2>Project Statistics</h2>
+                  <ul> 
+                      <li> 3 application classes</li>
+                      <li> 8 logic classes</li>
+                      <li> 4 enum classes</li>
+                      <li> 9 custom exception classes</li>
+                      <li> 9 object classes</li>
+                      <li> 8 persistence interface classes</li>
+                      <li> 8 persistence implementations classes</li>
+                      <li> 5 persistence stub classes</li>
+                      <li> 4 utility classes</li>
+                      <li> 24 activity classes</li>
+                      <li> 23 layouts (.xml)</li>
+                  </ul>
+                </div>
+              </div>
+  
+          </div>
+        
+          </div>
+      </main>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

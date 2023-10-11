@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#47515C</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="gray_50">#F7FAFC</color>
+    <color name="gray_100">#EDF2F7</color>
+    <color name="gray_200">#E2E8F0</color>
+    <color name="gray_300">#CBD5E0</color>
+    <color name="gray_400">#A0AEC0</color>
+    <color name="gray_500">#718096</color>
+    <color name="gray_600">#4A5568</color>
+    <color name="gray_700">#2D3748</color>
+    <color name="gray_800">#1A202C</color>
+    <color name="gray_900">#181D26</color>
+
+    <color name="text_body">@color/gray_500</color>
+    <color name="text_heading">@color/gray_800</color>
+
+    <color name="icon_inline">@color/gray_500</color>
+    <color name="light_blue_600">#FF039BE5</color>
+    <color name="light_blue_900">#FF01579B</color>
+    <color name="light_blue_A200">#FF40C4FF</color>
+    <color name="light_blue_A400">#FF00B0FF</color>
+    <color name="black_overlay">#66000000</color>
+
+    <color name="list_item_bg">@color/white</color>
+    <color name="list_item_stroke">@color/gray_400</color>
+    <color name="list_item_selected_stroke">@color/gray_400</color>
+    <color name="list_item_selected_bg">@color/gray_200</color>
+
+</resources>

@@ -1,0 +1,20 @@
+//google and maven have to be in this order for certain computers so build doesn't fail
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+}
+rootProject.name = "Promise"
+include ':app'

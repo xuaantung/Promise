@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appbar"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+            <com.google.android.material.appbar.MaterialToolbar
+                    android:id="@+id/task_toolBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    app:navigationIcon="@drawable/ic_arrow_back"
+                    app:title="Create Task"
+                    app:titleCentered="true" />
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/gap_lg">
+
+                <TextView
+                    android:id="@+id/task_name_input_label"
+                    style="@style/Theme.Promise.InputLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Task Title" />
+
+                <EditText
+                    android:id="@+id/task_name_input"
+                    style="@style/Theme.Promise.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_corner_gray"
+                    android:hint="@string/taskNameInput"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:id="@+id/task_description_input_label"
+                    style="@style/Theme.Promise.InputLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Task Description" />
+
+                <EditText
+                    android:id="@+id/task_description_input"
+                    style="@style/Theme.Promise.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="113dp"
+                    android:gravity="start|top"
+                    android:hint="@string/taskDesInput"
+                    android:imeOptions="actionNext|actionDone|flagNoEnterAction"
+                    android:inputType="textShortMessage" />
+
+                <TextView
+                    android:id="@+id/task_assignees_input_label"
+                    style="@style/Theme.Promise.InputLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Task Assignees" />
+
+                <LinearLayout
+                    android:id="@+id/task_assignee_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/gap_md"
+                    android:orientation="vertical"
+                    android:padding="0dp">
+
+                    <LinearLayout
+                        android:id="@+id/task_assignee_add_message_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/rounded_corner_gray"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/task_assignee_add_message"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="@dimen/gap_md"
+                            android:background="@drawable/rounded_corner_dotted"
+                            android:padding="@dimen/gap_lg"
+                            android:text="Press to add one or more assignees"
+                            android:textAlignment="center"
+                            android:textColor="@color/gray_400" />
+                    </LinearLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/task_assignee_recycler"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/task_estimate_input_label"
+                    style="@style/Theme.Promise.InputLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Task Estimate" />
+
+                <EditText
+                    android:id="@+id/task_estimate_input"
+                    style="@style/Theme.Promise.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:hint="@string/taskEstimateInput"
+                    android:imeOptions="actionNext|actionDone|flagNoEnterAction"
+                    android:inputType="number" />
+
+                <TextView
+                    android:id="@+id/task_priority_input_label"
+                    style="@style/Theme.Promise.InputLabel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Task Priority" />
+
+                <EditText
+                    android:id="@+id/task_priority_input"
+                    style="@style/Theme.Promise.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/taskPriorityInput"
+                    android:inputType="number" />
+
+                <Button
+                    android:id="@+id/submit_task_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Create Task"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+        </androidx.core.widget.NestedScrollView>
+
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

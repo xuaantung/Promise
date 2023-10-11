@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/task_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/gap_lg"
+    android:background="@drawable/rounded_corner_outline_gray"
+    android:orientation="vertical"
+    android:padding="@dimen/gap_lg">
+
+        <TextView
+            android:id="@+id/task_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12sp"
+            android:text="Task Title"
+            android:textAppearance="@style/Theme.Promise.TextAppearance.ListItemTitle"
+            android:textFontWeight="700"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/task_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Task Description"
+            android:textAppearance="@style/Theme.Promise.TextAppearance.Body"
+            app:lineHeight="20sp" />
+</LinearLayout>
